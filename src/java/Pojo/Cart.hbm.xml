@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Mar, 2021 12:51:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.Cart" table="cart" catalog="grocery_db" optimistic-lock="version">
+        <id name="cartId" type="java.lang.Long">
+            <column name="cart_id" />
+            <generator class="identity" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="PId" type="long">
+            <column name="p_id" not-null="true" />
+        </property>
+        <property name="quantity" type="long">
+            <column name="quantity" not-null="true" />
+        </property>
+        <property name="cprice" type="long">
+            <column name="cprice" not-null="true" />
+        </property>
+        <property name="total" type="long">
+            <column name="total" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

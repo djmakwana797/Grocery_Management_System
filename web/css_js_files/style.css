@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Feb, 2021, 9:43:26 PM
+    Author     : Dilip J Sarvaiya
+*/
+
+#nav_padding
+{
+    padding-left: 400px;
+}
+.navbar-inverse .navbar-brand
+{
+    color: #ffffff;
+}
+
+ #btn
+{
+   margin-bottom: 5px;
+}
+
+/*css for dashboard*/
+
+.admin .card
+{
+    border: 1px solid #673ab7;    
+}
+.admin .card:hover{
+    background: #c4e3f3;
+    cursor: pointer;
+}
+
+.custom-bg{
+    background-color: #ffba00 !important;
+}
+.bg-dark {
+    background-color: #007bff !important;
+}
+
+.discount-label
+{
+    font-size: 10px!important;
+    font-style: italic!important;
+    text-decoration:line-through!important
+}
+.discount-label1
+{
+    font-size: 10px!important;
+    font-style: italic!important;
+}
+.product-card:hover
+{
+    background: #c4e3f3;
+    cursor: pointer;
+}
+
+
+/*toast*/
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

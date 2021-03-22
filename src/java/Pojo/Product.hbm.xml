@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Mar, 2021 12:51:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.Product" table="product" catalog="grocery_db" optimistic-lock="version">
+        <id name="pid" type="java.lang.Long">
+            <column name="pid" />
+            <generator class="identity" />
+        </id>
+        <property name="pname" type="string">
+            <column name="pname" length="100" not-null="true" />
+        </property>
+        <property name="pdesc" type="string">
+            <column name="pdesc" length="1000" not-null="true" />
+        </property>
+        <property name="pphoto" type="string">
+            <column name="pphoto" length="500" not-null="true" />
+        </property>
+        <property name="pprice" type="long">
+            <column name="pprice" not-null="true" />
+        </property>
+        <property name="pdiscount" type="long">
+            <column name="pdiscount" not-null="true" />
+        </property>
+        <property name="pquantity" type="long">
+            <column name="pquantity" not-null="true" />
+        </property>
+        <property name="categoryId" type="long">
+            <column name="categoryId" not-null="true" />
+        </property>
+        <property name="shopId" type="long">
+            <column name="shop_id" not-null="true" />
+        </property>
+        <property name="punit" type="string">
+            <column name="punit" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

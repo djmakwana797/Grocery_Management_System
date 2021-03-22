@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Mar, 2021 12:51:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.OrderDetails" table="order_details" catalog="grocery_db" optimistic-lock="version">
+     
+        <id name="orderDetailsId" type="long">
+            <column name="order_details_id" />
+            <generator class="identity" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" not-null="true" />
+        </property>
+        <property name="subject" type="string">
+            <column name="subject" not-null="true" />
+        </property>
+        <property name="body" type="string">
+            <column name="body" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Mar, 2021 12:51:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.DeliveryBoy" table="delivery_boy" catalog="grocery_db" optimistic-lock="version">
+        <id name="dbId" type="java.lang.Long">
+            <column name="db_id" />
+            <generator class="identity" />
+        </id>
+        <property name="dbEmail" type="string">
+            <column name="db_email" length="100" not-null="true" />
+        </property>
+        <property name="dbPass" type="string">
+            <column name="db_pass" length="100" not-null="true" />
+        </property>
+        <property name="dbName" type="string">
+            <column name="db_name" length="100" not-null="true" />
+        </property>
+        <property name="dbCity" type="string">
+            <column name="db_city" length="100" not-null="true" />
+        </property>
+        <property name="dbPhone" type="string">
+            <column name="db_phone" length="50" not-null="true" />
+        </property>
+        <property name="dbAddress" type="string">
+            <column name="db_address" length="100" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="100" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>
